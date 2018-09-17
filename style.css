@@ -1,40 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
 body{
-    margin:0px;
-    padding:0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .main-container{
-    height:600px;
-    width:80%;
-    background-color: lightslategrey;
+    height:100vh;
+    width:100%;
+    background-image:url("background.jpg");
     position: absolute;
-    top:0px;
-    left:10%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.header{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color:rgba(214, 214, 214, 0.8);
+    height: 30px;
+    line-height: 30px;
+    vertical-align: center;
+    font-weight: bold;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.nav{
+    height:100%;
+    width:100%;
+    background-color:rgba(214, 214, 214, 0.6);
+    border-radius: 0 25px 0 0;
 }
 .bar{
-    background-color:rgb(214, 214, 214);
+    background-color:rgba(214, 214, 214, 0.8);
     border: 2px rgb(85, 82, 82) solid;
     box-shadow: 0px 2px 7px black;
-    height:40px;
-    width:90%;
-    margin:20px auto 0px auto;
+    height:25px;
+    width:94%;
+    margin:0 auto;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 9% 22% 21% 12% 12% 12% 12%;
     font-size: .8em;
     padding-left:10px;
     font-weight:bold;
-    line-height: 40px;
+    line-height: 25px;
     vertical-align: center;
 }
 .card-row{
     display: grid;
     grid-template-columns: 8% 92%;
-    width:90%;
+    width:94%;
     margin:3px auto;
 }
 .start-position{
-    background-color:rgb(72, 148, 28);
+    background-color:rgba(72, 148, 28, 0.6);
     border: 2px rgb(85, 82, 82) solid;
     box-shadow: 0px 1px 3px black;
     height:20px;
@@ -49,7 +70,7 @@ body{
     color:white;
 }
 .substitution{
-    background-color:rgb(141, 139, 0);
+    background-color:rgba(141, 139, 0, 0.6);
     border: 2px rgb(85, 82, 82) solid;
     box-shadow: 0px 1px 3px black;
     height:20px;
@@ -64,7 +85,7 @@ body{
     color:white;
 }
 .reserve{
-    background-color:rgb(151, 34, 34);
+    background-color:rgba(151, 34, 34, 0.6);
     border: 2px rgb(85, 82, 82) solid;
     box-shadow: 0px 1px 3px black;
     height:20px;
@@ -79,7 +100,7 @@ body{
     color:white;
 }
 .card{
-    background-color: white;
+    background-color: hsla(0, 0%, 100%, 0.6);
     border: 2px rgb(85, 82, 82) solid;
     box-shadow: 0px 1px 3px black;
     height:20px;

@@ -56,8 +56,8 @@ var Player = function(firstName,lastName){
     Player.prototype.attack = numberGen.randomAttack();
     Player.prototype.attackDef = numberGen.randomAttackDef();
     Player.prototype.attackGk = numberGen.randomAttackGk();
-//      CONECT TO DOM AND CHANGE VALUE OF ID'S IN DOM
-var playerInit = function(){
+//      CONNECT TO DOM
+var domPlayers = function(){
     for(i = 1; i<=22;i++){
         playerArr[i]={
             firstN: document.querySelector('#p'+ i +'-first-name'),
@@ -71,9 +71,9 @@ var playerInit = function(){
     console.log(playerArr);
     return playerArr;
 }
-playerInit();
+domPlayers();
 
-function playerCreate (id){
+var playerCreate = function (id){
     var posn = numberGen.randomPosition();
     var nameFirst = numberGen.randomFirst();
     var nameLast = numberGen.randomLast();
