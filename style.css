@@ -1,0 +1,107 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    height:600px;
+    width:80%;
+    background-color: lightslategrey;
+    position: absolute;
+    top:0px;
+    left:10%;
+}
+.bar{
+    background-color:rgb(214, 214, 214);
+    border: 2px rgb(85, 82, 82) solid;
+    box-shadow: 0px 2px 7px black;
+    height:40px;
+    width:90%;
+    margin:20px auto 0px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 9% 22% 21% 12% 12% 12% 12%;
+    font-size: .8em;
+    padding-left:10px;
+    font-weight:bold;
+    line-height: 40px;
+    vertical-align: center;
+}
+.card-row{
+    display: grid;
+    grid-template-columns: 8% 92%;
+    width:90%;
+    margin:3px auto;
+}
+.start-position{
+    background-color:rgb(72, 148, 28);
+    border: 2px rgb(85, 82, 82) solid;
+    box-shadow: 0px 1px 3px black;
+    height:20px;
+    width:100%;
+    border-radius: 20px;
+    display: grid;
+    font-size: .8em;
+    font-weight:bold;
+    line-height: 20px;
+    vertical-align: center;
+    text-align: center;
+    color:white;
+}
+.substitution{
+    background-color:rgb(141, 139, 0);
+    border: 2px rgb(85, 82, 82) solid;
+    box-shadow: 0px 1px 3px black;
+    height:20px;
+    width:100%;
+    border-radius: 20px;
+    display: grid;
+    font-size: .8em;
+    font-weight:bold;
+    line-height: 20px;
+    vertical-align: center;
+    text-align: center;
+    color:white;
+}
+.reserve{
+    background-color:rgb(151, 34, 34);
+    border: 2px rgb(85, 82, 82) solid;
+    box-shadow: 0px 1px 3px black;
+    height:20px;
+    width:100%;
+    border-radius: 20px;
+    display: grid;
+    font-size: .8em;
+    font-weight:bold;
+    line-height: 20px;
+    vertical-align: center;
+    text-align: center;
+    color:white;
+}
+.card{
+    background-color: white;
+    border: 2px rgb(85, 82, 82) solid;
+    box-shadow: 0px 1px 3px black;
+    height:20px;
+    width:98.5%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 24% 24% 13% 13% 13% 13%;
+    font-size: .8em;
+    padding-left:10px;
+    font-weight:bold;
+    line-height: 20px;
+    vertical-align: center;
+}
+.card:hover{
+    background-color:#ccc;
+    cursor: grab;
+}
+
+p{
+    padding:0px;
+    margin:0px;
+}
+.cen{
+    text-align: center;
+}
